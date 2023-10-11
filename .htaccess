@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /newbuswang
+RewriteRule (.*) public/$1 [L]

@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 3.5in);
+  grid-template-rows: repeat(4, 2in);
+  gap: 10px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 8.5in; /* Assuming you're printing on standard letter-size paper */
+  page-break-before: always;
+}
+.column {
+  width: 3.5in;
+  height: 2in;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 10px;
+  background-image: url("https://unligames.com/newbuswang/images/Card.png"); /* Replace with your image URL. */
+  background-size: cover;
+}
+
+.column_back {
+  width: 3.5in;
+  height: 2in;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 10px;
+  background-image: url("https://unligames.com/newbuswang/images/GulodBack.png"); /* Replace with your image URL*/
+  background-size: cover;
+}
+
+/* Remove padding and margin from columns */
+.custom-col {
+  padding: 0;
+  margin: 0;
+  font-size: 8px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 10.5px;
+  font-weight: bold;
+}
+
+span {
+  font-size: 10.5px;
+}
